@@ -1,0 +1,34 @@
+
+.numbtn{
+    margin:40px 40px;
+    border:5px solid #000 ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap:5px;
+    width: 450px;
+}
+
+.num{
+    display: flex;
+    gap:5px;
+}
+
+
+
+.numbtn button{
+    padding:5px 5px;
+    width:100px;
+    height:75px;
+    font-size:50px;
+    font-weight:bolder;
+}
+
+#inputans{
+    margin:5px 10px 5px 5px;
+    width:305px;
+    height:50px;
+    font-size:30px;
+    
+}
