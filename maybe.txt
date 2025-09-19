@@ -1,0 +1,9 @@
+
+
+js:
+function power(numpowored,numpower){
+    return Math.power(numpowored,numpower)
+}
+
+HTML:
+<button data-val="power">xˣ</button>
