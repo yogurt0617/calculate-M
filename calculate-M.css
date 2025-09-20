@@ -34,3 +34,14 @@
     
 }
 
+.ans{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+#bs{
+    font-size:30px;
+    width:120px;
+    height: 50px;
+}
