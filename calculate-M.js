@@ -13,6 +13,9 @@ function squrt(numsqurt){
 function power(numpowored,numpower){
     return numpowored ** numpower
 }
+function psa (psax){
+    return psax * -1
+}
 document.querySelectorAll("button").forEach(btn=>{
     btn.addEventListener("click",()=>{
         const value = btn.dataset.val
@@ -21,12 +24,13 @@ document.querySelectorAll("button").forEach(btn=>{
         if(value === "="){
             console.log(inputed)
             if(op === "power"){
-                let powerin = inputarry.splice("^")
+                let powerary = inputarry.join("")
+                let powerin = powerary.split("^")
                 inputed = powerin[0]
                 inputing = powerin[1]
                 var powerx = power(Number(inputed),Number(inputing))
                 inputans.value = powerx
-                inputarry = [powerx]
+                inputarry = [powerx.toString()]
                 op = "none"
             }
 
@@ -53,7 +57,8 @@ document.querySelectorAll("button").forEach(btn=>{
             op = "squrt"
         }
         else if(value === "power"){
-            inputans.value += "^"
+            inputarry.push("^")
+            inputans.value = inputarry.join("")
             op = "power"
         }
         else if(value === "AC"){
@@ -63,6 +68,10 @@ document.querySelectorAll("button").forEach(btn=>{
         else if(value === "bs"){
             inputarry.pop()
             inputans.value = inputarry.join("")
+        }
+        else if(value === "psa"){
+            var psaz = psa(inputans.value)
+            inputans.value = psaz
         }
         else {
             inputarry.push(value)
@@ -74,7 +83,7 @@ document.querySelectorAll("button").forEach(btn=>{
 nothing.addEventListener("click",()=>{
     nothingno += 1
     console.log(nothingno)
-    if(nothingno == 5){
+    if(nothingno % 5 == 0){
     inputans.value = "就還沒開發是在按什麼"
     }
 })
