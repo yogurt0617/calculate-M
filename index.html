@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculate M 1.1</title>
+    <title>calculate M 1.2</title>
     <link rel="stylesheet" href="calculate-M.css">
 </head>
 <body>
+    <header>
     <h1>計算機ver.1.2</h1>
+    <h3>也許等我哪天想起來我就會繼續優化，現在還在學習中</h3>
     <p>未來還會在做優化與更新</p>
-    <p style="color: red;">
-        不要一直按我的待開發按鈕
-        正負數切換還未開發完成
-    </p>
-    <p>
-        要算下一個東西記得一定要按AC清除(有小bug沒修) <br>
-    </p>
+    <p>我把input的readonly關了現在也可以用打的了,但我沒有限制只能數字所以不要亂玩!</p>
+    <p>要算下一個東西記得一定要按AC清除(有小bug沒修)</p>
+    </header>
+
+    <main>
     <div class = "numbtn">
         <div class="ans">
-            <input type="" readonly id="inputans">
+            <input type="" id="inputans">
             <button data-val="bs" id="bs">⌫</button>
         </div>
         <div class="num">
@@ -40,7 +40,7 @@
             <button data-val="8">8</button>
             <button data-val="9">9</button>
             <button data-val="*">×</button>
-            <button data-val="psa">+/-</button>
+            <button data-val="" id="nothing">待開發</button>
         </div>
         <div class="num">
             <button data-val="AC">AC</button>
@@ -50,7 +50,7 @@
             <button data-val="=">=</button>
         </div>
     </div>
-
+    </main>
 </body>
 <script src="calculate-M.js"></script>
 </html>

@@ -1,4 +1,14 @@
+body{
+    background-color:#E6E6FA;
+}
 
+header{
+    background-color:#87CEEB;
+}
+
+#nothing{
+    font-size:25px;
+}
 .numbtn{
     margin:40px 40px;
     border:5px solid #000 ;

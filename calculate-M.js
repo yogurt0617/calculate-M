@@ -28,7 +28,7 @@ document.querySelectorAll("button").forEach(btn=>{
                 let powerin = powerary.split("^")
                 inputed = powerin[0]
                 inputing = powerin[1]
-                var powerx = power(Number(inputed),Number(inputing))
+                let powerx = power(Number(inputed),Number(inputing))
                 inputans.value = powerx
                 inputarry = [powerx.toString()]
                 op = "none"
@@ -69,10 +69,11 @@ document.querySelectorAll("button").forEach(btn=>{
             inputarry.pop()
             inputans.value = inputarry.join("")
         }
-        else if(value === "psa"){
-            var psaz = psa(inputans.value)
+        /*else if(value === "psa"){
+            let psaz = psa(inputans.value)
             inputans.value = psaz
-        }
+            inputarry = [inputans.value]
+        }*/
         else {
             inputarry.push(value)
             inputans.value = inputarry.join("")
